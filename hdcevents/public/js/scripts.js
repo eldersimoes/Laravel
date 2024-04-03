@@ -1,0 +1,1 @@
+console.log("Esta funcionando o arquivo scripts.js")
