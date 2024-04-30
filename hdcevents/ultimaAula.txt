@@ -1,0 +1,6 @@
+
+
+Resgatando Parametros de URL
+Criando Controllers
+    rota -->  controller --> view
+    --> = acessa
