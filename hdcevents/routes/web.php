@@ -11,6 +11,27 @@ Route::get('/contato', function () {
     return view('contact');
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Deixei essas rotas por enquanto o prof nao usou mais no projeto
+
+
 Route::get('/produtos', function () {
 
     $busca = request('search');

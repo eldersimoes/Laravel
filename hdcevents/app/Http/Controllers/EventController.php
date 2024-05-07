@@ -4,25 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Event;                                   //adiciona o model Event no controler
+
 class EventController extends Controller
 {
     public function index() {
-        $nome = "Pedro";
-        $idade = "29";
-        $profissao = "Programador";
-        $arr = [11,21,31,41,51];
-        $nomes = ["Matheus","Maria","Joao","Saulo"];
+
+        $events = Event::all();                          // método ORM Event::all(); retorna todos os registros 
     
-        return view('welcome', [
-            'nome' => $nome,
-            'idade' => $idade, 
-            'profissao' => $profissao,
-            'arr' => $arr,
-            'nomes' => $nomes
-        ]);
+        return view('welcome', ['events' => $events]);  // envia para a view / todos os registros do model Event
     }
 
-    public function create() {        // padrao quando usa get do formulario
+    public function create() {                          // padrao quando usa get do formulario
         return view('events.create');
     }
 

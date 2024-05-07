@@ -30,9 +30,9 @@ return new class extends Migration
 };
 
 /**
- * php artisan migrate:status                  (consulta o status do banco)
  * php artisan migrate                         (cria as tabelas no banco das migrations ainda nao migradas)
  * php artisan make:migration nome_da_tabela   (Cria o arquivo base na pasta database/migrations)
+ * php artisan migrate:status                  (consulta o status do banco)
  * php artisan migrate:fresh                   (dropa(apaga) as tabelas do banco e faz novamente a criação das tabelas (migrate) de todos os arquivos)
  * 
  */
